@@ -328,10 +328,13 @@ h1.styled {
 .jt {
   position: relative;
   font-size: 20vmin;
-  font-family: 'Staatliches', sans-serif;
+  color: white;
+  word-spacing: 10px !important;
+  letter-spacing: 10px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-transform: uppercase;
   font-display: swap;
-  text-shadow: 0 0 10px tomato;
+  text-shadow: 0 0 20px rgb(255, 38, 0);
 }
 
 .jt__row {
@@ -355,7 +358,6 @@ h1.styled {
   top: 0;
   left: 0;
   user-select: none;
-  witdh:800px;
 }
 
 .jt__text {
@@ -458,3 +460,70 @@ h1.styled {
   }
 }
 
+
+.bodyss {
+  text-align:center;
+  background:linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
+  color:#555;
+  font-family:'Roboto';
+  font-weight:300;
+  font-size:32px;
+  padding-top:40vh;
+  height:100vh;
+  overflow:hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0,0,0);
+}
+
+.diiv {
+  display:inline-block;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+.diiv:first-of-type {    /* For increasing performance 
+                       ID/Class should've been used. 
+                       For a small demo 
+                       it's okaish for now */
+  animation: showup 7s infinite;
+}
+
+.diiv:last-of-type {
+  width:0px;
+  animation: reveal 7s infinite;
+}
+
+.diiv:last-of-type span {
+  margin-left:-355px;
+  animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:355px;}
+    80% {opacity:1;}
+    100% {opacity:0;width:355px;}
+}
+
+
+.pp {
+  font-size:12px;
+  color:#999;
+  margin-top:200px;
+}
