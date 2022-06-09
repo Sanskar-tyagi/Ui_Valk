@@ -527,3 +527,9 @@ h1.styled {
   color:#999;
   margin-top:200px;
 }
+.con{
+  border-radius: 20px;
+  margin-left: 4vw;
+  margin-top: 10vw !important;
+  margin-bottom: 5vw !important;
+}
