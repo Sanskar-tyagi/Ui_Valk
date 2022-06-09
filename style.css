@@ -327,14 +327,14 @@ h1.styled {
 
 .jt {
   position: relative;
-  font-size: 20vmin;
+  font-size: 9vw;
   color: white;
   word-spacing: 10px !important;
   letter-spacing: 10px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-transform: uppercase;
   font-display: swap;
-  text-shadow: 0 0 20px rgb(255, 38, 0);
+  /* text-shadow: 0 0 20px rgb(255, 38, 0);  animation effect  */
 }
 
 .jt__row {
